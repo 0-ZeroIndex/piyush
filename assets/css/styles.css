@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+.share-tech-mono-regular {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+/* Reset */  
+  body {
+    font-family: 'Share Tech Mono' !important;
+    background-color: #000000 !important;
+  }
+  
+  h1{
+    color: #ffffff !important;
+    font-size: 5rem;
+  }
+  h2{
+    color: #ffffff !important;
+    font-size: 2.5rem;
+  }
+  .row{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5rem;
+  }
+  .logo{
+    padding: 1rem;
+  }
+  
+  .logo-svg{
+    width: 25rem;
+  }
+  .name{
+    padding: 1rem;
+  }
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*===== LINKS PAGE =====*/
+.header{
+  margin: 0.25rem;
+  padding: 0.25rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.header-logo{
+  width: 25%;
+}
+
+.cards-row{
+  text-align: center ;
+}
+
+.profile{
+  border-radius: 50%;
+  width: 10rem;
+}
+.profile-about{
+  width: 75%;
+}
+.outer {
+  width: 50vw;
+  height: 50rem;
+  border-radius: 10px;
+  padding: 1px;
+  background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+  position: relative;
+  margin: 1rem;
+  display: inline-block;
+}
+.card {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: solid 1px #202222;
+  background-size: 20px 20px;
+  background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  color: #fff;
+}
+.ray {
+  width: 220px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #c7c7c7;
+  opacity: 0.4;
+  box-shadow: 0 0 50px #fff;
+  filter: blur(10px);
+  transform-origin: 10%;
+  top: 0%;
+  left: 0;
+  transform: rotate(40deg);
+}
+
+.card .text {
+  font-weight: bolder;
+  font-size: 150%;
+  /*background: linear-gradient(45deg, #000000 4%, #fff, #000);*/
+  background-color: #fff;
+  background-clip: text;
+  color: transparent;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+.topl {
+  top: 2rem;
+  background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+.bottoml {
+  bottom: 2rem;
+}
+.leftl {
+  left: 2rem;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+.rightl {
+  right: 2rem;
+  width: 1px;
+  height: 100%;
+}
+
+/*ABOUT LINKS*/
+
+.button-about {
+  font-weight: bolder;
+  font-family: "Share Tech Mono", monospace;
+  width:40vw;
+
+  position: relative;
+  cursor: pointer;
+
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 7px;
+
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(0, 0, 0) 0%,
+    rgb(18, 18, 18) 90%
+  );
+
+  color: rgb(255, 255, 255, 0.66);
+
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+  margin: 0.25rem;
+}
+
+.button-about i{
+  float: left;
+}
+
+.button-about::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0.2;
+
+  transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.button-about:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1) translateY(-3px);
+}
+
+.button-about:hover::before {
+  opacity: 1;
+}
+
+
+@media screen and (max-width:768px) {
+    .body{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .logo-svg{
+        width: 15rem;
+      }
+    h1{
+        font-size: 3rem;
+      }
+    h2{
+        font-size: 1.5rem;
+      }
+    .outer{
+      width: 90vw;
+    }
+    .button-about{
+      width:60vw;
+    }
+    .header-logo{
+      width: 50%;
+    }
+}
